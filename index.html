@@ -1,0 +1,371 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calvert 2nd Grade — Parkville Registration</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --muted:#6b7280; --accent:#0f172a; --brand:#0b60d4;
+      --success:#059669; --danger:#dc2626; --glass: rgba(15,23,42,0.04);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{background:var(--bg); color:var(--accent); margin:0; padding:24px;}
+    .container{max-width:980px; margin:0 auto;}
+    header{display:flex; gap:16px; align-items:center; margin-bottom:18px;}
+    .brand{font-weight:700; font-size:20px;}
+    h1{margin:0; font-size:20px;}
+    p.lead{margin:6px 0 18px; color:var(--muted);}
+    .card{background:var(--card); border-radius:12px; box-shadow:0 6px 18px rgba(2,6,23,0.06); padding:18px; margin-bottom:16px;}
+    .row{display:flex; gap:12px; align-items:center; flex-wrap:wrap;}
+    .col{flex:1 1 300px;}
+    .muted{color:var(--muted); font-size:14px;}
+    button{background:var(--brand); color:white; border:0; padding:8px 12px; border-radius:8px; cursor:pointer;}
+    .btn-ghost{background:transparent; border:1px solid var(--glass); color:var(--accent);}
+    .small{font-size:13px; padding:6px 8px; border-radius:7px;}
+    .links a{color:var(--brand); text-decoration:none;}
+    table{width:100%; border-collapse:collapse; margin-top:12px;}
+    th,td{text-align:left; padding:8px; border-bottom:1px solid #eef2f7; font-size:14px;}
+    th{font-weight:600; color:var(--muted);}
+    input[type="text"], input[type="email"], select {padding:8px; border-radius:8px; border:1px solid #e6eef6; width:100%;}
+    .actions{display:flex; gap:8px; flex-wrap:wrap;}
+    .pill{background:var(--glass); padding:6px 8px; border-radius:999px; font-size:13px;}
+    .success{color:var(--success); font-weight:600;}
+    .danger{color:var(--danger); font-weight:600;}
+    footer{margin-top:24px; color:var(--muted); font-size:13px;}
+    .iframe-wrap{width:100%; min-height:470px; border-radius:8px; overflow:hidden; border:1px solid #e6eef6;}
+    @media (max-width:720px){ header{flex-direction:column; align-items:flex-start;} .row{flex-direction:column;} }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div>
+        <div class="brand">Calvert 2nd Grade — Parkville Registration</div>
+        <div class="muted">Keep the class together — one simple place for info, links, and tracking</div>
+      </div>
+      <div style="margin-left:auto">
+        <button id="copySpecial" class="small">Copy Special Request text</button>
+        <button id="copyRefund" class="small btn-ghost">Copy LTRC refund template</button>
+      </div>
+    </header>
+
+    <!-- Parent-facing message -->
+    <section class="card">
+      <h1>Quick message for families</h1>
+      <p class="lead">Parkville is <strong>confirmed</strong> to accept our group as a <strong>7–8 Non-Clinic</strong> team. Please reply to Will by <strong>Tue, 10/21</strong> and be ready to register by <strong>Fri, 10/24</strong>. Fee: <strong>$120/player</strong>.</p>
+
+      <div class="row">
+        <div class="col">
+          <strong>How to register (when you get the Parkville link):</strong>
+          <ol style="margin:8px 0 0 18px" class="muted">
+            <li>Select <strong>7–8 Non-Clinic</strong>.</li>
+            <li>Pay <strong>$120</strong>.</li>
+            <li>In <em>Special Request</em> paste: <code>Coach: William Forrester - Calvert 2nd Grade</code>.</li>
+            <li>Reply-all: <em>Registered — [Player Name]</em> so Will can track.</li>
+          </ol>
+        </div>
+        <div class="col">
+          <strong>Practice & games (Parkville schedule):</strong>
+          <div class="muted" style="margin-top:8px">
+            <div><strong>Practices:</strong> Tue/Wed 6:00–7:00 PM (Parkville Rec Center / Parkville Middle / Pine Grove Middle)</div>
+            <div style="margin-top:6px"><strong>Games:</strong> Saturdays — 9:00 AM–12:00 PM window.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px" class="links">
+        <strong>Useful links</strong> — click to open:
+        <ul style="margin:8px 0 0 18px">
+          <li><a href="https://www.stonealley.com/program/Parkville/group/PKBASK/session/Winter2026" target="_blank">Parkville — registration page (StoneAlley)</a></li>
+          <li><a href="https://www.leaguelineup.com/welcome.asp?url=pvbasketball" target="_blank">Parkville league homepage</a></li>
+          <li><a href="https://www.leaguelineup.com/schedules.asp?url=pvbasketball&divisionid=821804" target="_blank">7–8 Non-Clinic schedule (Nov)</a></li>
+          <li><a href="https://ltrcbasketball.org/" target="_blank">LTRC homepage & refund policy</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Embedded Google Form -->
+    <section class="card">
+      <h2>Quick sign / status form (embedded)</h2>
+      <p class="muted">Use this form to tell Will you've registered, if you need help with a refund, or if you'd like to coach/help. The form responses will populate the Google Form/Sheet Will shared.</p>
+
+      <div class="iframe-wrap" style="margin-top:12px">
+        <!-- embedded form iframe (from user) -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfL777RkBa7CCqXmLhzAa8h07nASBUORlJ8gs3L8YNv4zBi6A/viewform?embedded=true"
+                width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </section>
+
+    <!-- Tracker + roster -->
+    <section class="card" id="trackerCard">
+      <h2>Team Roster & quick tracker</h2>
+      <p class="muted">Use the fields below to track registration/payment/coach status. Data is stored in your browser (localStorage) and can be exported as CSV; you can also keep the Google Form as the canonical sheet.</p>
+
+      <div class="row" style="margin-top:12px;">
+        <div style="flex:0 0 320px">
+          <label>Player full name <input id="playerName" type="text" placeholder="Abel Forrester"></label>
+        </div>
+        <div style="flex:0 0 220px">
+          <label>Parent email <input id="parentEmail" type="email" placeholder="parent@example.com"></label>
+        </div>
+        <div style="flex:0 0 160px">
+          <label>Registered? 
+            <select id="registered">
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div style="margin-top:10px" class="row">
+        <div style="flex:0 0 160px">
+          <label>Paid? 
+            <select id="paid">
+              <option value="no">No</option>
+              <option value="yes">Yes</option>
+            </select>
+          </label>
+        </div>
+        <div style="flex:1">
+          <label>Notes <input id="notes" type="text" placeholder="e.g., needs refund help / wants to coach"></label>
+        </div>
+        <div style="flex:0 0 160px" class="actions">
+          <button id="addRow">Add / Update</button>
+          <button id="clearAll" class="btn-ghost small">Clear all</button>
+        </div>
+      </div>
+
+      <table id="rosterTable" style="margin-top:12px">
+        <thead><tr><th>Player</th><th>Parent email</th><th>Registered</th><th>Paid</th><th>Notes</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <div style="margin-top:12px" class="actions">
+        <button id="exportCsv" class="small">Export CSV</button>
+        <button id="resetStorage" class="small btn-ghost">Reset local tracker</button>
+      </div>
+    </section>
+
+    <!-- Suggested form questions & LTRC refund template -->
+    <section class="card">
+      <h2>Suggested tracking questions (for the Google Form / parents)</h2>
+      <p class="muted">Copy these into your Google Form or use them to confirm fields parents complete.</p>
+
+      <ul style="margin:8px 0 0 18px">
+        <li>Player full name</li>
+        <li>Parent/Guardian name</li>
+        <li>Parent email</li>
+        <li>Phone (optional)</li>
+        <li>Has your family registered on Parkville? (Yes / No)</li>
+        <li>Date registered (if yes)</li>
+        <li>Payment status (Paid / Not paid)</li>
+        <li>Did you register with LTRC already? (Yes / No)</li>
+        <li>Will you request an LTRC refund? (Yes / No)</li>
+        <li>Do you want help with the refund request? (Yes / No)</li>
+        <li>Are you interested in helping coach? (Yes / No)</li>
+        <li>Background check completed? (Yes / No / In progress)</li>
+        <li>Preferred bench availability (morning/afternoon/evening)</li>
+        <li>Notes (allergies, scheduling issues, other)</li>
+      </ul>
+
+      <h3 style="margin-top:12px">Parkville special-request text (copy)</h3>
+      <div style="display:flex; gap:8px; align-items:center; margin-top:8px;">
+        <code id="specialText" style="padding:8px; background:#f1f5f9; border-radius:8px; display:block;">Coach: William Forrester - Calvert 2nd Grade</code>
+        <button onclick="copyText('#specialText')" class="small">Copy</button>
+      </div>
+
+      <h3 style="margin-top:12px">LTRC refund request template (copy & personalize)</h3>
+      <p class="muted">Follow LTRC policy: refund requests must be made in writing and postmarked/delivered by Dec 1, 2025. The template below is intentionally generic so each family can personalize it with their child's details and reason.</p>
+
+      <div style="display:flex; gap:8px; align-items:flex-start; margin-top:8px;">
+        <textarea id="refundTemplate" style="width:100%; min-height:160px; padding:10px; border-radius:8px; border:1px solid #e6eef6; background:#fbfdff;">
+Subject: Refund request — [Player Full Name]
+
+To: Dept. of Recreation and Parks
+ATTN: LTRC/TTREC Basketball Program
+P.O. Box 247
+Lutherville-Timonium, MD 21094
+
+Hello LTRC Basketball Board,
+
+I am submitting a refund request for my child, [Player Full Name], DOB: [MM/DD/YYYY], who was registered for the [Division/Team] for the current season. We are withdrawing because our family will be registering with a different recreational league so our child can play with their school classmates.
+
+Details:
+- Player: [Player Full Name]
+- DOB: [MM/DD/YYYY]
+- Division registered with LTRC: [e.g., 6–7 Orange]
+- Registration date (if known): [MM/DD/YYYY]
+- Payment method: [card / other]
+- Brief reason for refund request: We are moving to a school-team registration to keep classmates together.
+
+I understand refunds are reviewed by the Board and are granted only for approved circumstances. I respectfully request that you review this request and advise if any additional information is required. Please process a refund to the original payment method if approved. I understand any approved refund will be subject to a $10 administrative fee.
+
+Thank you for your time and consideration.
+
+Sincerely,
+[Parent Name]
+[Phone] | [Email]
+        </textarea>
+      </div>
+
+      <div style="margin-top:8px" class="actions">
+        <button id="copyRefundBtn" class="small">Copy refund template</button>
+        <button id="openLtrc" class="small btn-ghost" onclick="window.open('https://ltrcbasketball.org/','_blank')">Open LTRC site</button>
+      </div>
+    </section>
+
+    <footer class="muted">
+      <div>Questions? Contact Will: <a href="mailto:1william.forrester@gmail.com">1william.forrester@gmail.com</a></div>
+      <div style="margin-top:6px">Notes: Parkville registration link & schedule will be forwarded by Will when the league provides it. Use the embedded Google Form above to submit registration status so Will can keep the canonical sheet up to date.</div>
+    </footer>
+  </div>
+
+  <script>
+    // --- copy helpers
+    function copyText(selectorOrElement){
+      let el = typeof selectorOrElement === 'string' ? document.querySelector(selectorOrElement) : selectorOrElement;
+      let text = (el.tagName === 'CODE' || el.tagName === 'TEXTAREA') ? el.textContent || el.value : el.value;
+      navigator.clipboard.writeText(text.trim()).then(()=> {
+        alert('Copied to clipboard');
+      }, ()=> alert('Copy failed — select and copy manually'));
+    }
+
+    // bind copy buttons
+    document.getElementById('copySpecial').addEventListener('click', ()=> copyText('#specialText'));
+    document.getElementById('copyRefund').addEventListener('click', ()=> copyText('#refundTemplate'));
+    document.getElementById('copyRefundBtn').addEventListener('click', ()=> copyText('#refundTemplate'));
+
+    document.getElementById('openLtrc').addEventListener('click', ()=> window.open('https://ltrcbasketball.org/','_blank'));
+
+    // --- local roster tracker (simple)
+    const STORAGE_KEY = 'pv_roster_tracker_v1';
+    const rosterTableBody = document.querySelector('#rosterTable tbody');
+
+    function loadRoster(){
+      const raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : [];
+    }
+    function saveRoster(rows){
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(rows));
+    }
+    function renderRoster(){
+      const rows = loadRoster();
+      rosterTableBody.innerHTML = '';
+      rows.forEach((r, i) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${escapeHtml(r.player)}</td>
+          <td><a href="mailto:${escapeHtml(r.email)}">${escapeHtml(r.email)}</a></td>
+          <td>${escapeHtml(r.registered)}</td>
+          <td>${escapeHtml(r.paid)}</td>
+          <td>${escapeHtml(r.notes)}</td>
+          <td style="text-align:right">
+            <button class="small" data-index="${i}" onclick="editRow(${i})">Edit</button>
+            <button class="small btn-ghost" data-index="${i}" onclick="deleteRow(${i})">Delete</button>
+          </td>`;
+        rosterTableBody.appendChild(tr);
+      });
+      if(rows.length===0){
+        rosterTableBody.innerHTML = '<tr><td colspan="6" class="muted">No rows yet — add the first entry above.</td></tr>';
+      }
+    }
+
+    function escapeHtml(s){ return (s||'').toString().replace(/[&<>"]/g, c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+    function addOrUpdateRow(){
+      const player = document.getElementById('playerName').value.trim();
+      const email = document.getElementById('parentEmail').value.trim();
+      const registered = document.getElementById('registered').value;
+      const paid = document.getElementById('paid').value;
+      const notes = document.getElementById('notes').value.trim();
+      if(!player || !email){ alert('Please enter player name and parent email'); return; }
+      const rows = loadRoster();
+      // if a row with same player exists, update it
+      const idx = rows.findIndex(r => r.player.toLowerCase() === player.toLowerCase());
+      const newRow = {player, email, registered, paid, notes, updated: new Date().toISOString()};
+      if(idx >= 0){ rows[idx] = newRow; } else { rows.push(newRow); }
+      saveRoster(rows);
+      renderRoster();
+      // clear inputs
+      document.getElementById('playerName').value=''; document.getElementById('parentEmail').value=''; document.getElementById('notes').value='';
+    }
+
+    function editRow(i){
+      const rows = loadRoster();
+      if(!rows[i]) return;
+      document.getElementById('playerName').value = rows[i].player;
+      document.getElementById('parentEmail').value = rows[i].email;
+      document.getElementById('registered').value = rows[i].registered;
+      document.getElementById('paid').value = rows[i].paid;
+      document.getElementById('notes').value = rows[i].notes;
+    }
+    function deleteRow(i){
+      if(!confirm('Delete this row?')) return;
+      const rows = loadRoster();
+      rows.splice(i,1);
+      saveRoster(rows);
+      renderRoster();
+    }
+
+    document.getElementById('addRow').addEventListener('click', addOrUpdateRow);
+    document.getElementById('clearAll').addEventListener('click', ()=> {
+      if(!confirm('Clear all tracker entries?')) return;
+      localStorage.removeItem(STORAGE_KEY);
+      renderRoster();
+    });
+    document.getElementById('resetStorage').addEventListener('click', ()=> {
+      if(confirm('Reset local tracker (clears saved data)?')) {
+        localStorage.removeItem(STORAGE_KEY); renderRoster();
+      }
+    });
+
+    // Export CSV
+    document.getElementById('exportCsv').addEventListener('click', ()=>{
+      const rows = loadRoster();
+      if(!rows.length){ alert('No entries to export.'); return; }
+      const headers = ['Player','ParentEmail','Registered','Paid','Notes','Updated'];
+      const csv = [headers.join(',')].concat(rows.map(r => {
+        return [r.player, r.email, r.registered, r.paid, (r.notes||'').replace(/\n/g,' '), r.updated || ''].map(escapeCsv).join(',');
+      })).join('\n');
+      const blob = new Blob([csv], {type:'text/csv;charset=utf-8;'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'parkville_roster_tracker.csv'; document.body.appendChild(a); a.click();
+      setTimeout(()=>{ URL.revokeObjectURL(url); a.remove(); }, 500);
+    });
+
+    function escapeCsv(s){
+      if(s == null) s = '';
+      s = s.toString();
+      if(s.includes('"') || s.includes(',') || s.includes('\n')) s = '"' + s.replace(/"/g,'""') + '"';
+      return s;
+    }
+
+    // initial render
+    renderRoster();
+
+    // Pre-fill roster with the 10 players (if no saved data) — won't overwrite existing saved
+    (function seedRoster(){
+      const existing = loadRoster();
+      if(existing.length) return;
+      const initial = [
+        {player:'Abel Forrester', email:'1william.forrester@gmail.com', registered:'no', paid:'no', notes:''},
+        {player:'Auggie London', email:'brianslondon@gmail.com', registered:'no', paid:'no', notes:''},
+        {player:'Greyson Korondi', email:'gkorondi@yahoo.com', registered:'no', paid:'no', notes:''},
+        {player:'Mac Gillis', email:'james.alexander.gillis@gmail.com', registered:'no', paid:'no', notes:''},
+        {player:'Sami Moukheiber', email:'emoukheiber@jhmi.edu', registered:'no', paid:'no', notes:''},
+        {player:'Carter Fritze', email:'paigefritze@gmail.com', registered:'no', paid:'no', notes:''},
+        {player:'Paul Thomas', email:'stasia.thomas@gmail.com', registered:'no', paid:'no', notes:''},
+        {player:'Declan Nolan', email:'katemnolan@yahoo.com', registered:'no', paid:'no', notes:''},
+        {player:'William Groff', email:'bggroff@gmail.com', registered:'no', paid:'no', notes:''},
+        {player:'Grant Bahl', email:'daphne.bahl@gmail.com', registered:'no', paid:'no', notes:''}
+      ];
+      saveRoster(initial);
+      renderRoster();
+    })();
+
+    // copy handlers bound above already
+  </script>
+</body>
+</html>
